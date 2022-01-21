@@ -16,11 +16,11 @@ export default function TeacherForm(){
       <form onSubmit={submitHandler}>
         <label>
           First Name:
-          <input type="text" name="firstName" value={firstName} onChange={setFirstName(firstName)}/>
+          <input type="text" name="firstName" value={firstName} onChange={() =>setFirstName(e.target.value)}/>
         </label>
         <label>
           Last Name:
-          <input type="text" name="lastName" value={lastName} onChange={setLastName(lastName)}/>
+          <input type="text" name="lastName" value={lastName} onChange={() => setLastName(e.target.value)}/>
         </label>
         <input type="submit" value="Submit" />
       </form>
